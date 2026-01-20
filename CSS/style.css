@@ -407,6 +407,78 @@ hr{
     margin-right: 5px;
 }
 
+/*Host Section */
+
+.host{
+    padding: 80px 20px;
+    background: radial-gradient(circle at top, #2a0b4d, #12051f);
+}
+.host-container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.host-heading{
+    width: 100%;
+    max-width: 1200px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 60px auto 48px;
+}
+.host-card{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    background: linear-gradient(90deg, #2a0f44, #1a0b2d);
+    border-radius: 20px;
+    padding: 40px 50px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.host-image img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3b155e;
+}
+.host-content h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.host-content p{
+    font-size: 1rem;
+    line-height: 24px;
+    color: #cfc3e8;
+    margin-bottom: 16px;
+}
+.social-icon{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.social-icon a{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ff4ecd;    
+}
+.social-icon a:hover{
+    transform: translateY(-3px);
+    
+}
+.social-icon a img{
+    width: 17px;
+    height: 17px;
+    margin: 15px;
+}
 
 
 
@@ -583,5 +655,45 @@ hr{
     }
     .card-content h3{
         font-size: 1.3rem;
+    }
+
+    /* Host Section*/
+
+    .host{
+        padding: 50px 16px;
+    }
+    .host-container{
+        max-width: 440px;
+    }
+    .host-heading{
+        max-width: 400px;
+        margin: 0 auto 24px;
+        font-size: 2rem;
+    }
+    .host-card{
+        max-width: 400px;
+        margin: 0 auto 20px;
+        border-radius: 15px;
+        padding: 24px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+    .host-image img{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 16px;
+    }
+    .host-content h3{
+        font-size: 1.5rem;
+    }
+    .social-icon{
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icon img{
+        width: 14px;
+        height: 14px;
     }
 }

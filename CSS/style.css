@@ -248,6 +248,60 @@ hr{
     color: #ffffff;
 }
 
+/* Choice Section*/
+
+.choice{
+    background: radial-gradient(circle at top, #2b0f45, #160722);
+    padding: 80px 20px;
+}
+.choice-container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.section-heading{
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 40px auto;
+}
+.choice-grid{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(180px, auto);
+    gap: 30px;
+}
+.card{
+    background: linear-gradient(180deg, #2a0f4d, #200938);
+    border-radius: 20px;
+    padding: 40px;
+}
+.card h3{
+    margin: 16px auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.card p{
+    font-size: 1rem;
+    line-height: 24px;
+    color: #cfc3e8;
+}
+.tall{
+    grid-row: span 2;
+    padding: 107px 40px;
+}
+.wide{
+    grid-column: span 2;
+}
+
+
 
 
 /* Responsive*/
@@ -357,5 +411,34 @@ hr{
     .stat-item h3 i{
         font-size: 1.5rem;
     }
+    
+    /* choice section*/
 
+    .choice{
+        padding: 40px 16px;
+    }
+    .choice-container{
+        max-width: 440px;
+    }
+    .section-heading{
+        max-width: 400px;
+        font-size: 2rem;
+        margin: 20px auto;
+    }
+    .choice-grid{
+        max-width: 400px;
+        margin: 0 auto 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .card{
+        width: 400px;
+        border-radius: 16px;
+        padding: 24px;
+    }
+    .card h3{
+        margin: 8px auto;
+        font-size: 1.4rem;
+    }
 }

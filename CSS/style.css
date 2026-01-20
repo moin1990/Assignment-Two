@@ -10,6 +10,8 @@ body{
     font-optical-sizing: auto;
     background-color: #0b0216;
     }
+
+
  /* Navbar Section*/
 header{
     width: 100%;
@@ -59,9 +61,30 @@ header{
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: pulse 1.8s infinite;
+    box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+}
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+    70%{
+        transform: scale(1.08);
+        box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
 }
 .btn-subscribe:hover{
     transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgb(79, 70, 229, 0.6);
+}
+.btn-subscribe:active{
+    transform: scale(0.95);
 }
 .menu-icon {
     display: none;

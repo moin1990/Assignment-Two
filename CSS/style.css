@@ -177,6 +177,78 @@ hr{
     opacity: 0.7;
 }
 
+/* About Section*/
+.about{
+    background: radial-gradient(
+        circle at top,
+        #2a0b4d 0%,
+        #140424 60%,
+        #0b0215 100%
+      );
+    padding: 120px 20px;  
+}
+
+.about-container{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.about-description{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-description h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+.description{
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.sub-description{
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ffffff;
+    margin-bottom: 80px;
+}
+.divider{
+    width: 100%;
+    max-width: 1200px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0 auto 80px;
+}
+.states{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    gap: 80px;
+    margin: 0 auto;
+}
+.stat-item h3{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00ff88;
+    margin-bottom: 16px;
+}
+.stat-item h3 i{
+    font-size: 2.5rem;
+}
+.stat-item span{
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ffffff;
+}
+
+
 
 /* Responsive*/
 @media screen and (max-width: 576px) {
@@ -239,6 +311,51 @@ hr{
     }
     .btn img{
         margin-right: 5px;
+    }
+
+    /*about section*/
+    .about{
+        padding: 80px 16px;
+    }
+    .about-container{
+        max-width: 440px;
+    }
+    .about-description{
+        max-width: 400px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .about-description h2{
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+    .description{
+        margin-bottom: 14px;
+    }
+    .sub-description{
+        margin-bottom: 40px;
+    }
+    .divider{
+        max-width: 400px;
+        margin-bottom: 40px;
+        opacity: 0.6;
+    }
+    .states{
+        max-width: 400px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 20px;
+    }
+    .stat-item{
+        display: grid;
+        gap: 6px;
+    }
+    .stat-item h3{
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+    .stat-item h3 i{
+        font-size: 1.5rem;
     }
 
 }

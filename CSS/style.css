@@ -70,6 +70,113 @@ hr{
     opacity: 0.6;
 }
 
+/* Banner Section*/
+.banner{
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #2b0b4e, #0f021f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.banner-container{
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    text-align: center;
+}
+.wave{
+    width: 100%;
+    max-width: 1600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+}
+.banner-content{
+    margin: auto;
+    max-width: 550px;
+    position: relative;
+    z-index: 2;
+}
+.mic-circle{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto 40px;
+}
+.circle{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.mic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    transform: translate(-50%, -50%);
+}
+.badge{
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    background-color: #00ff88;
+    color: #1A0B2F;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 30px;
+}
+.banner-content h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+.banner-content p{
+    font-size: 1rem;
+    color: #ffffff;
+    max-width: 550px;
+    margin-bottom: 24px;
+}
+.banner-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.btn{
+    padding: 12px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.btn img{
+    margin-right: 8px;
+}
+.sportify{
+    background: linear-gradient(135deg, #ffcc33, #ff2fb2, #7a2cff);
+    color: #ffffff;
+}
+.subscribe{
+    border: 1px solid #00ff88;
+    color: #00ff88;
+}
+.btn:hover{
+    transform: translate(-3px);
+    opacity: 0.7;
+}
+
 
 /* Responsive*/
 @media screen and (max-width: 576px) {
@@ -94,6 +201,44 @@ hr{
         padding: 10px;
         display: block;
         cursor: pointer;
+    }
+
+    /*banner section*/
+    .banner{
+        min-height: auto;
+    }
+    .banner-container{
+        max-width: 440px;
+    }
+    .banner-content{
+        max-width: 400px;
+    }
+    .wave{
+        width: 140%;
+        top: 45%;
+    }
+    .mic-circle{
+        width: 155px;
+        height: 155px;
+        margin: 70px auto 24px;
+    }
+    .mic{
+        width: 50px;
+    }
+    .badge{
+        top: 10px;
+        right: -10px;
+        font-size: 11px;
+    }
+    .banner-content h1{
+        font-size: 2.5rem;
+    }
+    .banner-content p{
+        max-width: 400px;
+        font-size: 0.8rem;
+    }
+    .btn img{
+        margin-right: 5px;
     }
 
 }
